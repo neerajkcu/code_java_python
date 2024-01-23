@@ -11,6 +11,6 @@ Parrot.py - Class and object reference calling
 Animal.py - Inheritance
 Computer.py - Encapsulation and abstraction 
 Polygon.py - Polymorphism 
-factory_main.py - factory pattern
+factory_main.py - Factory pattern
 singleton_main.py - Singleton pattern
-proxy_main.py - proxy pattern
+proxy_main.py - Proxy pattern
