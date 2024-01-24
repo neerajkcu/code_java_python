@@ -1,4 +1,4 @@
-class Calculator {
+class Calc {
  
     // Method with 2 integer parameters
     static int Add(int a, int b)
@@ -24,15 +24,15 @@ class Calculator {
     }
 }
 
-class Main {
+class Calculator {
  
     // Java’s driver method
     public static void main(String[] args)
     {
     
-        System.out.println(Calculator.Add(2, 4));
+        System.out.println(Calc.Add(2, 4));
         // Overloading (polymorphism)
-        System.out.println(Calculator.Add(2, 4, 6));
-        System.out.println(Calculator.Add(2, 4, 6, 8));
+        System.out.println(Calc.Add(2, 4, 6));
+        System.out.println(Calc.Add(2, 4, 6, 8));
     }
 }
