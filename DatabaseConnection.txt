@@ -1,0 +1,106 @@
+
+Query fired on MySql 8.3 command line clinet to check the Connection url for JAVA and PYTHON code 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Enter password: *********(Sanskriti)
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 21
+Server version: 8.3.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> SELECT USER()
+    -> ;
++----------------+
+| USER()         |
++----------------+
+| root@localhost |
++----------------+
+1 row in set (0.07 sec)
+
+mysql> SHOW DATABASES
+    -> ;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+6 rows in set (2.75 sec)
+
+mysql> select @@hostname;
++-----------------+
+| @@hostname      |
++-----------------+
+| DESKTOP-LNLV2U5 |
++-----------------+
+1 row in set (0.05 sec)
+
+mysql> select host from information_schema.processlist;
++-----------------+
+| host            |
++-----------------+
+| localhost       |
+| localhost:51788 |
++-----------------+
+2 rows in set, 1 warning (0.31 sec)
+
+mysql> select @@hostname;
++-----------------+
+| @@hostname      |
++-----------------+
+| DESKTOP-LNLV2U5 |
++-----------------+
+1 row in set (0.00 sec)
+
+
+mysql> SHOW VARIABLES WHERE Variable_name = 'port';
++---------------+-------+
+| Variable_name | Value |
++---------------+-------+
+| port          | 3306  |
++---------------+-------+
+1 row in set (0.62 sec)
+
+mysql> SHOW VARIABLES WHERE Variable_name = 'hostname';
++---------------+-----------------+
+| Variable_name | Value           |
++---------------+-----------------+
+| hostname      | DESKTOP-LNLV2U5 |
++---------------+-----------------+
+1 row in set (0.00 sec)
+
+
+mysql> status
+--------------
+C:\Program Files\MySQL\MySQL Server 8.3\bin\mysql.exe  Ver 8.3.0 for Win64 on x86_64 (MySQL Community Server - GPL)
+
+Connection id:          21
+Current database:
+Current user:           root@localhost
+SSL:                    Cipher in use is TLS_AES_128_GCM_SHA256
+Using delimiter:        ;
+Server version:         8.3.0 MySQL Community Server - GPL
+Protocol version:       10
+Connection:             localhost via TCP/IP
+Server characterset:    utf8mb4
+Db     characterset:    utf8mb4
+Client characterset:    utf8mb4
+Conn.  characterset:    utf8mb4
+TCP port:               3306
+Binary data as:         Hexadecimal
+Uptime:                 1 hour 49 min 55 sec
+
+Threads: 2  Questions: 6556  Slow queries: 0  Opens: 300  Flush tables: 3  Open tables: 208  Queries per second avg: 0.994
+--------------
+
+mysql>
