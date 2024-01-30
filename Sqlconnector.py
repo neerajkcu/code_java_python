@@ -8,7 +8,7 @@ conn = mysql.connector.connect(
 
 mycursor = conn.cursor()
 
-mycursor.execute("SELECT * FROM user")
+mycursor.execute("SELECT * FROM student")
 
 myresult = mycursor.fetchall()
 
