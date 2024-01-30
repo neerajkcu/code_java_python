@@ -26,7 +26,7 @@ class GFGReadWrite {
 			// Creating a FileReader object and
 			// file to be read is passed as in parameters
 			// from the local directory of computer
-			FileReader fr = new FileReader("demofile.csv");
+			FileReader fr = new FileReader("data.csv");
 
 			// FileReader will open that file from that
 			// directory, if there is no file found it will
