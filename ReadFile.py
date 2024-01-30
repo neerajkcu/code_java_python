@@ -1,4 +1,5 @@
 import os
+import csv
 
 # print files in present dir before creating file2 
 print("List of files before")
@@ -6,7 +7,7 @@ print(os.listdir())
 print("\n")
 
 #open file1 in reading mode
-file1 = open('demofile.txt', 'r')
+file1 = open('data.csv', 'r')
 
 #open file2 in writing mode
 file2 = open('file2.txt','w')
