@@ -1,5 +1,8 @@
 
 Query fired on MySql 8.3 command line clinet to check the Connection url for JAVA and PYTHON code 
+
+
+
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 Enter password: *********(Sanskriti)
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -102,5 +105,93 @@ Uptime:                 1 hour 49 min 55 sec
 
 Threads: 2  Questions: 6556  Slow queries: 0  Opens: 300  Flush tables: 3  Open tables: 208  Queries per second avg: 0.994
 --------------
+
+mysql>
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Enter password: *********
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 41
+Server version: 8.3.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> select user();
++----------------+
+| user()         |
++----------------+
+| root@localhost |
++----------------+
+1 row in set (0.03 sec)
+
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+6 rows in set (1.85 sec)
+
+mysql> use mysql;
+Database changed
+mysql> CREATE TABLE STUDENT (
+    ->    NAME VARCHAR(20) NOT NULL,
+    ->    ID INT AUTO_INCREMENT,
+    ->    AGE INT NOT NULL,
+    ->    ADDRESS CHAR (25),
+    ->    COURSE CHAR (25),
+    ->    FEE  DECIMAL (18, 2),
+    ->    PRIMARY KEY (ID)
+    -> );
+Query OK, 0 rows affected (7.36 sec)
+
+mysql> DESC STUDENT;
++---------+---------------+------+-----+---------+----------------+
+| Field   | Type          | Null | Key | Default | Extra          |
++---------+---------------+------+-----+---------+----------------+
+| NAME    | varchar(20)   | NO   |     | NULL    |                |
+| ID      | int           | NO   | PRI | NULL    | auto_increment |
+| AGE     | int           | NO   |     | NULL    |                |
+| ADDRESS | char(25)      | YES  |     | NULL    |                |
+| COURSE  | char(25)      | YES  |     | NULL    |                |
+| FEE     | decimal(18,2) | YES  |     | NULL    |                |
++---------+---------------+------+-----+---------+----------------+
+6 rows in set (0.71 sec)
+
+mysql> INSERT INTO STUDENT ( NAME,ID, AGE,ADDRESS,COURSE,FEE) VALUES ("Nikhilesh",1,28,"DELHI","BTECH",12000);
+Query OK, 1 row affected (0.38 sec)
+
+mysql> INSERT INTO STUDENT ( NAME,ID, AGE,ADDRESS,COURSE,FEE) VALUES ("Kailash",2,18,"MATHURA","MCA",18000);
+Query OK, 1 row affected (0.10 sec)
+
+mysql> UPDATE STUDENT SET AGE = 17 WHERE ID = 1;
+Query OK, 1 row affected (0.12 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT * from STUDENT;
++-----------+----+-----+---------+--------+----------+
+| NAME      | ID | AGE | ADDRESS | COURSE | FEE      |
++-----------+----+-----+---------+--------+----------+
+| Nikhilesh |  1 |  17 | DELHI   | BTECH  | 12000.00 |
+| Kailash   |  2 |  18 | MATHURA | MCA    | 18000.00 |
++-----------+----+-----+---------+--------+----------+
+2 rows in set (0.02 sec)
+
+
 
 mysql>
