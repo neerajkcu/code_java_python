@@ -225,6 +225,11 @@ Query OK, 0 rows affected (0.12 sec)
 
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';
 ERROR 1410 (42000): You are not allowed to create a user with GRANT
+
 mysql> GRANT ALL ON *.* TO 'root'@'*';
-You are allowed to create a user with GRANT
-mysql>
+Query OK, 0 rows affected (0.12 sec)
+
+mysql> FLUSH PRIVILEGES;
+Query OK, 0 rows affected (0.12 sec)
+
+mysql> 
