@@ -143,7 +143,7 @@ def main_screen():
     Button(root, text="Registration",height="1",width="15",bg="red",font="bold",command=registration).pack()
     Label(root,text="").pack()
     Label(root,text="").pack()
-    Label(root,text="Developed By Naman Kumar").pack()
+    Label(root,text="Developed By Sanskriti").pack()
 
 main_screen()
 root.mainloop()
