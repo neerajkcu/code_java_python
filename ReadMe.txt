@@ -22,3 +22,4 @@ AbstractFactory_main.py - Abstraction pattern
 Singleton_main.py - Singleton pattern
 Sqlconnector.py - Connection with database for fetching data 
 Proxy_main.py - Proxy pattern
+PyLoginPage.py - Login Page for user
