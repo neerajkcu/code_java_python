@@ -10,11 +10,12 @@ TestJavaCollection.java - Collection utilization
 AnimalGroup.java- Abstraction
 ConcatTest.java - Performance Tuening 
 ConnectionMain.java - Connection with database to inserting data
-InsertDBConnection - Connection with database to inserting data
+InsertDBConnection.py - Connection with database to inserting data
 GFG.java - Singleton pattern
 GfgMain.java - Connection with database for fetching data 
 Parrot.py - Class and object reference calling 
 Animal.py - Inheritance
+RunEncap.java - Encapsulation
 Computer.py - Encapsulation and abstraction 
 Polygon.py - Polymorphism 
 Factory_main.py - Factory pattern
